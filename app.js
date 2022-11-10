@@ -9,8 +9,7 @@ const printNumber = function () {
 // 2. Write a JS code to print a 2D array
 const printArray = function (arr) {
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[0].length; j++) {
-      //   console.log(arr[0].length);
+    for (let j = 0; j < arr[i].length; j++) {
       console.log(arr[i][j]);
     }
   }
@@ -32,4 +31,4 @@ const printEven = function (arr) {
 };
 let arr2 = [13, 23, 12, 45, 22, 48, 66, 100];
 
-printEven(arr2);
+// printEven(arr2);
