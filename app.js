@@ -14,12 +14,12 @@ const printArray = function (arr) {
     }
   }
 };
-let arr = [
+let arr1 = [
   [11, 22],
   [33, 44],
   [55, 66],
 ];
-// printArray(arr);
+// printArray(arr1);
 
 // 3. Write a JS code to print Even numbers in given array
 const printEven = function (arr) {
@@ -32,3 +32,28 @@ const printEven = function (arr) {
 let arr2 = [13, 23, 12, 45, 22, 48, 66, 100];
 
 // printEven(arr2);
+
+// 4. Write a JS code to delete all occurrence of element in given array
+let arr3 = [23, 56, 4, 78, 5, 63, 45, 210, 56];
+
+const deleteElement = function (arr, ele) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === ele) arr.splice(i, 1);
+  }
+  return arr;
+};
+arr3 = deleteElement(arr3, 56);
+// console.log(arr3);
+
+// const newArray = arr3.filter((item) => item !== 56);
+// console.log(newArray);
+// console.log(arr3);
+
+// 5. Write a JS code to demonstrate Async loop
+
+for (let i = 0; i < 5; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, 5000);
+}
+console.log('Hello');
