@@ -51,9 +51,22 @@ arr3 = deleteElement(arr3, 56);
 
 // 5. Write a JS code to demonstrate Async loop
 
-for (let i = 0; i < 5; i++) {
-  setTimeout(() => {
-    console.log(i);
-  }, 5000);
-}
-console.log('Hello');
+// for (let i = 0; i < 5; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 5000);
+// }
+// console.log('Hello');
+
+// 6. Write a JS code to find the power of a number using for loop
+
+const numPower = function (num, pow) {
+  let res = 1;
+  for (let i = 0; i < pow; i++) {
+    res *= num;
+  }
+  return res;
+};
+
+console.log(numPower(4, 3));
+console.log(numPower(16, 2));
