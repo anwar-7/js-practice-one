@@ -67,6 +67,30 @@ const numPower = function (num, pow) {
   }
   return res;
 };
+// console.log(numPower(4, 3));
+// console.log(numPower(16, 2));
 
-console.log(numPower(4, 3));
-console.log(numPower(16, 2));
+// 7. Write a JS code to print a pattern using for loop
+
+const printPattern = function (range) {
+  for (let i = 1; i <= range; i++) {
+    let str = '';
+    for (let j = 1; j <= i; j++) {
+      str += j + ' ';
+    }
+    console.log(str);
+  }
+};
+// printPattern(8);
+
+// 8. Write a JS code to find the no of digits in a number
+const digitCount = function (num) {
+  let count = 0;
+  while (num != 0) {
+    num = Math.floor(num / 10);
+    count++;
+  }
+  return count;
+};
+console.log(digitCount(8448));
+console.log(digitCount(563049));
