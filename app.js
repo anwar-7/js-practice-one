@@ -92,5 +92,18 @@ const digitCount = function (num) {
   }
   return count;
 };
-console.log(digitCount(8448));
-console.log(digitCount(563049));
+// console.log(digitCount(1000589));
+// console.log(digitCount(155558982));
+
+// 9. Write a JS code to calculate the sum of digits in a number
+const digitSum = function (num) {
+  let sum = 0;
+  while (num != 0) {
+    sum += num % 10;
+    num = Math.floor(num / 10);
+  }
+  return sum;
+};
+console.log(digitSum(1234)); //10
+console.log(digitSum(4367)); //20
+console.log(digitSum(56349)); //27
