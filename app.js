@@ -104,6 +104,33 @@ const digitSum = function (num) {
   }
   return sum;
 };
+/* 
 console.log(digitSum(1234)); //10
 console.log(digitSum(4367)); //20
 console.log(digitSum(56349)); //27
+ */
+
+// 10. Write a JS code to find the largest number in an array
+const arr4 = [2, 45, 3, 67, 34, 567, 34, 345, 123];
+
+let largest = arr4[0];
+for (let i = 0; i < arr4.length; i++) {
+  largest = arr4[i] > largest ? arr4[i] : largest;
+}
+// console.log(largest);
+
+// 11. Write a JS code to find the number of zeros in 2D Matrix
+const arr5 = [
+  [0, 1, 1],
+  [0, 1, 0],
+  [1, 0, 0],
+  [1, 0, 1],
+];
+
+let zeroCount = 0;
+for (let i = 0; i < arr5.length; i++) {
+  for (let j = 0; j < arr5[i].length; j++) {
+    zeroCount = arr5[i][j] === 0 ? zeroCount + 1 : zeroCount;
+  }
+}
+// console.log(zeroCount);
