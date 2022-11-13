@@ -134,3 +134,16 @@ for (let i = 0; i < arr5.length; i++) {
   }
 }
 // console.log(zeroCount);
+
+// 12. Write a JS code to find product of two arrays
+const findProd = function (arr1, arr2) {
+  let arrProd = arr1.length > arr2.length ? arr1 : arr2;
+  for (let i = 0; i < Math.min(arr1.length, arr2.length); i++) {
+    arrProd[i] = arr1[i] * arr2[i];
+  }
+  return arrProd;
+};
+var arr6 = [3, 45, 23, 78, 34];
+var arr7 = [4, 2, 34, 4, 12, 1];
+
+console.log(findProd(arr6, arr7));
