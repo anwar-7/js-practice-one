@@ -146,4 +146,45 @@ const findProd = function (arr1, arr2) {
 var arr6 = [3, 45, 23, 78, 34];
 var arr7 = [4, 2, 34, 4, 12, 1];
 
-console.log(findProd(arr6, arr7));
+// console.log(findProd(arr6, arr7));
+
+// 3d array... Example practice
+
+const array3D = [
+  [
+    [3, 45, 23, 78, 34],
+    [4, 2, 34, 100, 12, 1],
+    [78, 34, 12, 1],
+  ],
+  [
+    [3, 45, 23, 78, 34],
+    [4, 2, 34, 4, 12, 1],
+    [78, 34, 12, 1],
+  ],
+  [
+    [3, 45, 23, 78, 34],
+    [4, 2, 34, 4, 12, 1],
+    [78, 34, 12, 1],
+  ],
+];
+// console.log(array3D[0][1][5]);
+
+let sum = 0;
+
+let value = 0;
+
+for (let i = 0; i < array3D.length; i++) {
+  for (let j = 0; j < array3D[i].length; j++) {
+    for (let k = 0; k < array3D[i][j].length; k++) {
+      sum += array3D[i][j][k];
+
+      if (array3D[i][j][k] == 100) {
+        value = array3D[i][j][k];
+        break;
+      }
+      // sum += value;
+    }
+  }
+}
+console.log('I am the Sum:', sum);
+console.log('I am the Value:', value);
